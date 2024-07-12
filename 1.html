@@ -258,9 +258,10 @@ K: ${this.#bt}
 <p><center><button onclick="IssueNotification.check('${iB}')">確認する</button></center></p>
         `;dialog.close(),dialog.payload.innerHTML=iz,dialog.showModal();let iG=iB.match(/[0-9]+/)[0];fetch(`https://ttsapis.com/v1/public/indicator/notify-issue/${iG}`)}static check(e){IssueNotification.#bQ(e),window.open(e,"_blank").focus(),setTimeout(()=>{dialog.close()},100);let t=e.match(/[0-9]+/)[0];fetch(`https://ttsapis.com/v1/public/indicator/check-issue/${t}`)}static async #bQ(iR){if(localStorage.issueNotification){for(var iY=JSON.parse(localStorage.issueNotification),i9=0;i9<iY.length;i9++)iY[i9].url==iR&&(iY[i9].is_checked=!0);localStorage.issueNotification=JSON.stringify(iY)}}}IssueNotification.update();function upgrader_3_7_0(){var e="upgrader_3_7_0";if(localStorage.getItem(e))return 0;if(localStorage.length){var r=JSON.stringify(localStorage);localStorage.clear(),localStorage.setItem(e,r);var t="data://application/json,"+encodeURIComponent(r);console.log(e),console.log(t)}else localStorage.setItem(e,"none")}upgrader_3_7_0();</script>
 <div class="title"></a></div><h1>WEB版VOICEVOX</h1>
-<a>made by aaa</a>
 <center>
 
+  <a>made by aaa</a>
+  
 <b> ｜ </b>
 </center>
  
