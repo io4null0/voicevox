@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<title>WEB版VOICEVOX</title>
+<title>webVOICEVOX</title>
 <meta charset="utf-8">
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -123,7 +123,7 @@ var dialog=document.getElementById("dialog");dialog.payload=document.getElementB
             <input type="checkbox" id="overScrolled" onclick="localStorage.setItem('overScrolled', 'never');DraggableSVG.answer('NeverShowAgain', 'yes');setTimeout(()=>dialog.close(), 100);"> <label for="overScrolled">今後表示しない</label>
             </p>
         `)}static #C(){dialog.doModal(`
-            <h3>スクロールを抑制アンケート</h3>
+          p  <h3>スクロールを抑制アンケート</h3>
             <div><h4>スクロール抑制はどうですか？</h4>
             <p>スクロールを抑制することによって、
             <br>全体的に使いやすくなりましたか？</p>
@@ -333,45 +333,5 @@ function showControl() {
     document.getElementById('control').hidden = false;
 }
 </script>
- 
-<div class="voice">テキストから音声を合成
-<p><a href="/multiple">WEB版VOICEVOX（複数）</a></p>
-<p><a href="/split">長文向け分割合成</a></p>
-<p><a href="/song">VOICEVOX Song</a></p>
-<p><a href="/nemo">VOICEVOX Nemo</a></p>
-<p><a href="https://voicevox.su-shiki.com/serial/?v=3">以前のバージョン</a></p>
-</div>
- 
-<div class="voice"><form action="https://voicevox.su-shiki.com/video/?fileUpload=enable&v=1000" method="post"><p>スライドショーから動画を作成<br><input name="googleSlide" placeholder="googleスライドの共有リンク"> <button name="pkey" value=-1>クイックスタート</button></p><a href="https://voicevox.su-shiki.com/video/?v=1000">WEB版VOICEVOX（動画）</a><p><a href="https://voicevox.su-shiki.com/video/versions1/">以前のバージョン</a></p></form></div>
- 
-<div class="speaker_8"><form action="https://voicevox.su-shiki.com/video/?fileUpload=enable" method="post"><p>春日部つむぎ動画メーカー <button name="pkey" value=-1>クイックスタート</button></p><a href="https://voicevox.su-shiki.com/video/">WEB版VOICEVOX（動画）</a><p><a href="https://voicevox.su-shiki.com/video/versions/">以前のバージョン</a></p></form></div>
- 
- 
- 
-<div class="title"><h2>その他</h2>
-<p><a href="/abc_sample">ソング・ハミングの歌唱サンプル</a></p>
-<p><a href="https://voicevox.su-shiki.com/morphing/style/">スタイル間モーフィング（簡易版）</a></p>
-<p><a href="https://voicevox.su-shiki.com/vertical/">スマホ用拡大表示</a></p>
-<p><a href="https://voicevox.su-shiki.com/arithmetic_pitch_sequence/">等差補間 音程調声</a></p>
-<p><a href="https://voicevox.su-shiki.com/su-shikiapis/">WEB版API</a></p><a href="https://voicevox.su-shiki.com/unite/">長文合成</a><p><a href="https://voicevox.su-shiki.com/reg/">詳細調声</a></p>
-<p><a href="#control" onclick="showControl()">コントロールパネル（β）</a></p>
-<p><a href="https://voicevox.su-shiki.com/user/index/">ユーザー機能</a></p>
-<p><a href="https://www.voicevox.su-shiki.com/vote">人気投票2023</a></p>
-<p><a href="https://voicevox.su-shiki.com/info/">死活監視・メンテナンス情報</a></p>
- 
-<p><a href="https://voicevox.hiroshiba.jp/dormitory">キャラクター紹介</a>（ボイボ寮）</p>
-<p><a href="https://voicevox.hiroshiba.jp/nemo/#:~:text=CV">VOICEVOX Nemo CV</a>（ボイネモ 公式サイト）</p>
- 
- 
-<h3>旧システム（PHP環境）</h3>
-現在ご覧のページは、新システム（Erlang環境）の Main Page です。
-旧システム（PHP環境）にアクセスするには、こちらのリンクをご利用ください。
-<p><a href="https://voicevox.su-shiki.com/?mode=php">PHP環境 Main Page</a></p>
-<p><a href="https://voicevox.su-shiki.com/?mode=streaming">PHP環境 ストリーミング再生</a></p>
-<h3>注意</h3>「プロジェクトkey」など、「key」と書かれている数字、文字列は安易に公開しないでください。誰でも編集や削除が出来てしまいます。また、同じプロジェクトを複数人（複数タブ）で同時に編集すると、片方の変更が上書きされることがあります。
-<div align="right"><p><a href="https://www.google.com/intl/en/policies/privacy/partners/">google partners privacy policies</a></p></div>
-</div>
- 
- 
  
 </body>
