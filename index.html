@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Vocaloid Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Web Vocaloid Tool</h1>
+
+    <div id="controls">
+        <label for="lyricsInput">歌詞入力:</label>
+        <textarea id="lyricsInput" placeholder="ここに歌詞を入力"></textarea>
+
+        <button id="playButton">合成して再生</button>
+    </div>
+
+    <canvas id="pianoRoll" width="600" height="300"></canvas>
+
+    <audio id="audioPlayer" controls></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
