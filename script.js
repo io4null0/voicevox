@@ -9,7 +9,7 @@ const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 async function playNote(lyric, pitch) {
     try {
         // 音源ファイルを指定されたパスからフェッチ
-        const response = await fetch(`./utau_sounds/${lyric}.wav`);
+        const response = await fetch(`/utau_sounds/${lyric}.wav`);
         
         // レスポンスが成功であるかチェック
         if (!response.ok) {
