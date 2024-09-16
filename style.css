@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#controls {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+    font-size: 16px;
+}
+
+canvas {
+    border: 1px solid #000;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+}
